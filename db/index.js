@@ -5,8 +5,6 @@ const path = require('path');
 
 const contactsPath = path.join(__dirname, "contacts.json");
 
-
-// TODO: задокументувати кожну функцію
 async function listContacts() {
   const result = await fs.readFile(contactsPath);
   return JSON.parse(result);
